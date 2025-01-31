@@ -15,7 +15,7 @@ async function getAIResponse() {
     };
 
     try {
-        const response = await fetch("https://gaia-openai-francecentral-embeddingonly.openai.azure.com", {
+        const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
